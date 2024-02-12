@@ -1,7 +1,7 @@
-const Todo = () => {
+const Todo = ({ todo }) => {
     return (
         <div>
-            <h2>Todo</h2>
+            <h3>{todo}</h3>
         </div>
     )
 }
