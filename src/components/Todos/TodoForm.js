@@ -1,11 +1,12 @@
 const TodoForm = () => {
+
+
     return (
         <div>
             <form>
-                <label>Enter new todo</label>
-                <input type="text"></input>
-            </form>
+                <input placeholder ="Enter new todo" type="text" />
             <button type="submit">Submit</button>
+            </form>
         </div>
     )
 }
