@@ -1,0 +1,36 @@
+.todoFromContainer {
+    margin-bottom: 30px;
+}
+
+.todoFromContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.todoFromContainer input {
+    width: 45%;
+    height: 30px;
+    font-size: 1.3rem;
+}
+
+.todoFromContainer button {
+    margin-left: 20px;
+    height: 50px;
+    cursor: pointer;
+    background-color: beige;
+    color: rgb(77, 58, 104);
+    font-size: 1.5rem;
+}
+
+.todoFromContainer button:hover {
+    background-color: rgb(237, 238, 205);
+}
+
+.todoFromContainer input,
+.todoFromContainer button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
