@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <h1>Todo App</h1>
       <TodoForm addTodo={addTodo}/>
-      <TodosActions resetTodos={resetTodos} deleteCompletedTodos={deleteCompletedTodos} />
+      {!!todos.length && <TodosActions resetTodos={resetTodos} deleteCompletedTodos={deleteCompletedTodos} />}
       <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
     </div>
   );
