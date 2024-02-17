@@ -35,6 +35,8 @@ function App() {
     setTodos(todos.filter((todo) => !todo.isCompleted))
   }
 
+const completedTodosCount = todos.filter((todo) => todo.isCompleted).length;
+
   return (
     <div className="App">
       <h1>Todo App</h1>
