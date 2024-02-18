@@ -43,6 +43,7 @@ const completedTodosCount = todos.filter((todo) => todo.isCompleted).length;
       <TodoForm addTodo={addTodo}/>
       {!!todos.length && <TodosActions completedTodosExist={!!completedTodosCount} resetTodos={resetTodos} deleteCompletedTodos={deleteCompletedTodos} />}
       <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
+      {completedTodosCount > 0 && <h2>{`There is ${completedTodosCount} completed ${completedTodosCount > 1 ? 'todos' : 'todo'}`}</h2>}
     </div>
   );
 }
