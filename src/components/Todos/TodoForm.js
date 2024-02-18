@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './TodoForm.module.css'
+import Button from '../UI/Button'
 
 const TodoForm = ({addTodo}) => {
     const [text, setText] = useState('');
@@ -13,7 +14,7 @@ const TodoForm = ({addTodo}) => {
         <div className={styles.todoFromContainer}>
             <form onSubmit={onSubmitHendler}>
                 <input placeholder ="Enter new todo" type="text" value={text} onChange={(e) => setText(e.target.value)} />
-            <button type="submit">Submit</button>
+            <Button type="submit" title="Submit">Submit</Button>
             </form>
         </div>
     )

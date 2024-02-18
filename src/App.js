@@ -41,7 +41,7 @@ const completedTodosCount = todos.filter((todo) => todo.isCompleted).length;
     <div className="App">
       <h1>Todo App</h1>
       <TodoForm addTodo={addTodo}/>
-      {!!todos.length && <TodosActions resetTodos={resetTodos} deleteCompletedTodos={deleteCompletedTodos} />}
+      {!!todos.length && <TodosActions completedTodosExist={!!completedTodosCount} resetTodos={resetTodos} deleteCompletedTodos={deleteCompletedTodos} />}
       <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
     </div>
   );
